@@ -1,3 +1,4 @@
+import Event from "../models/Event";
 import Card from "./Card";
 import "./CardList.css";
 
@@ -8,7 +9,6 @@ interface Props {
 const CardList = ({ eventArrayProp }: Props) => {
   return (
     <div className="CardList">
-      {" "}
       <h2>Results</h2>
       <ul>
         {eventArrayProp.map((item) => (
