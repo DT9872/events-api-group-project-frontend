@@ -1,9 +1,9 @@
-// interface Images {
-//     url: string;
-// }
+interface Image {
+  url: string;
+}
 
-// export default interface Event {
-//     id: string;
-//     name: string;
-//     images: Images;
-// }
+export default interface Event {
+  name: string;
+  id: string;
+  images: Image[];
+}
