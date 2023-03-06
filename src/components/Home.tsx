@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import Event from "../models/Event";
 import { getEvents } from "../services/EventsService";
+import CardList from "./CardList";
+import Form from "./Form";
 import "./Home.css";
 
 const Home = () => {
@@ -12,7 +14,12 @@ const Home = () => {
       setEvents(events);
     })();
   }, []);
-  return <div className="Home">Home works</div>;
+  return (
+    <div className="Home">
+      <Form />
+      <CardList eventArrayProp={events} />
+    </div>
+  );
 };
 
 export default Home;
