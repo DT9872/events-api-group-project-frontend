@@ -18,8 +18,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
                    
-          <Route path="/gifs/:id" element={<Details />} />
-          <Route path="/gifs/favorites" element={<Favorites />} />
+          <Route path="/events/:id" element={<Details />} />
+          <Route path="/events/favorites" element={<Favorites />} />
                    
           <Route path="*" element={<Navigate to="/" />} />
                  
