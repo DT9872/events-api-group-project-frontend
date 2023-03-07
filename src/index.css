@@ -1,0 +1,15 @@
+h1,
+h2,
+h3,
+li,
+ul,
+header,
+main,
+nav,
+form,
+body,
+p {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+}

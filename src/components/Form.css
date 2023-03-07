@@ -1,0 +1,38 @@
+.Form {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.Form form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.Form form input {
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.Form form label {
+  margin-top: 10px;
+}
+.Form form button {
+  background-color: #486581;
+  padding: 9px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border-style: none;
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .Form form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .Form form input {
+    padding: 2px;
+  }
+}

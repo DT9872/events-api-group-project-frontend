@@ -1,0 +1,9 @@
+.Favorites ul {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.Favorites {
+  background-color: #102a43;
+}

@@ -17,8 +17,18 @@ const Details = () => {
 
   return (
     <div className="Details">
-      <h2>{events?.name}</h2>
-      <img src={events?.images[1].url} alt={events?.name} />
+      <div className="DetailsImg">
+        <img src={events?.images[1].url} alt={events?.name} />
+      </div>
+      <div className="DetailsInfo">
+        <h2>{events?.name}</h2>
+        <h3>{`${events?.dates.start.localDate} at ${events?.dates.start.localTime}`}</h3>
+        <h3>{events?._embedded.venues[0].name}</h3>
+        <h3>
+          {`${events?._embedded.venues[0].city.name}, 
+        ${events?._embedded.venues[0].state.stateCode}`}
+        </h3>
+      </div>
     </div>
   );
 };

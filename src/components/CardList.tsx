@@ -9,7 +9,7 @@ interface Props {
 const CardList = ({ eventArrayProp }: Props) => {
   return (
     <div className="CardList">
-      <h2>Results</h2>
+      <h2>Coming Soon:</h2>
       <ul>
         {eventArrayProp.map((item) => (
           <Card eventProp={item} key={item.id} />

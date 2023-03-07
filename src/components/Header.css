@@ -1,0 +1,18 @@
+.Header {
+  background-color: #486581;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  color: white;
+}
+
+.Header h1,
+li {
+  list-style: none;
+  color: white;
+}
+
+.Header a {
+  text-decoration: none;
+}

@@ -1,9 +1,28 @@
 interface Start {
-  localDate?: string;
+  localDate: string;
+  localTime: string;
 }
 
 interface Date {
-  start?: Start;
+  start: Start;
+}
+
+interface State {
+  stateCode: string;
+}
+
+interface City {
+  name: string;
+}
+
+interface Venue {
+  name: string;
+  city: City;
+  state: State;
+}
+
+interface Embedded {
+  venues: Venue[];
 }
 
 interface Image {
@@ -14,5 +33,7 @@ export default interface Event {
   name: string;
   id: string;
   images: Image[];
-  date?: Date;
+  _embedded: Embedded;
+  // venues: Venue[];
+  dates: Date;
 }

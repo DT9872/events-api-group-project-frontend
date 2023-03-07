@@ -17,14 +17,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-                   
           <Route path="/events/:id" element={<Details />} />
           <Route path="/events/favorites" element={<Favorites />} />
-                   
           <Route path="*" element={<Navigate to="/" />} />
-                 
         </Routes>
-             
       </Router>
     </div>
   );
