@@ -1,0 +1,11 @@
+.CardList h2 {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .CardList ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
