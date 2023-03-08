@@ -1,22 +1,28 @@
 .Details {
-  background-color: #102a43;
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: white;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 15px;
 }
 
 .Details img {
   max-width: 445px;
   border-radius: 5px;
   margin-top: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in;
+  box-shadow: 0px 0px 15px 0px rgb(184, 188, 224);
 }
 
 .Details .DetailsImg {
   margin: 10px;
-  max-width: 100%;
-  align-items: center;
 }
 
 .Details .DetailsInfo {
@@ -28,14 +34,24 @@
   margin-bottom: 10px;
 }
 
+.Details button {
+  background-color: #486581;
+  padding: 9px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border-style: none;
+  color: white;
+  box-shadow: 0px 0px 15px 0px rgb(184, 188, 224);
+}
+
+.Details button:hover {
+  background-color: #f0f4f8;
+  color: #486581;
+}
+
 @media only screen and (min-width: 768px) {
   .Details {
     flex-direction: row;
-  }
-  .Details .DetailsInfo {
-    flex: 1;
-  }
-  .Details .DetailsImg {
-    flex: 1;
+    justify-content: center;
   }
 }

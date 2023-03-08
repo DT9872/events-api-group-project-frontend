@@ -28,31 +28,37 @@ const Form = () => {
   return (
     <div className="Form">
       <form onSubmit={(e) => handleSubmit(e)}>
-        <label htmlFor="keyword">Search:</label>
+        <h2>Let's Make Memories!</h2>
+        <label htmlFor="keyword"></label>
         <input
           type="text"
           name="keyword"
           id="keyword"
+          placeholder="Search artist, team, venue, or event"
           value={keyword}
           onChange={(e) => setKeyword(e.target.value)}
         />
-        <label htmlFor="city">City:</label>
-        <input
-          type="text"
-          name="city"
-          id="city"
-          value={city}
-          onChange={(e) => setCity(e.target.value)}
-        />
-        <label htmlFor="state">State:</label>
-        <input
-          type="text"
-          name="state"
-          id="state"
-          value={stateCode}
-          onChange={(e) => setStateCode(e.target.value)}
-        />
-        <button>Submit</button>
+        <div className="cityContainer">
+          <label htmlFor="city"></label>
+          <input
+            type="text"
+            name="city"
+            id="city"
+            placeholder="City: ex. Detroit"
+            value={city}
+            onChange={(e) => setCity(e.target.value)}
+          />
+          <label htmlFor="state"></label>
+          <input
+            type="text"
+            name="state"
+            id="state"
+            placeholder="State: ex. MI"
+            value={stateCode}
+            onChange={(e) => setStateCode(e.target.value)}
+          />
+        </div>
+        <button>Find your event</button>
         {/* <label htmlFor="date">Date</label>
       <input
         type="date"

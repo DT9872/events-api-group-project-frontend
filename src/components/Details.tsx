@@ -28,6 +28,7 @@ const Details = () => {
           {`${events?._embedded.venues[0].city.name}, 
         ${events?._embedded.venues[0].state.stateCode}`}
         </h3>
+        <button>Add to cart</button>
       </div>
     </div>
   );
