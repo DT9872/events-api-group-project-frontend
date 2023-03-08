@@ -16,9 +16,9 @@ const Card = ({ eventProp }: Props) => {
     <li className="Card">
       <div className="cardContainer">
         <h3>{eventProp.name}</h3>
-        {eventProp.images[2].url ? (
+        {eventProp.images[6].url ? (
           <Link to={`/events/${eventProp.id}`}>
-            <img src={eventProp.images[2].url} alt={eventProp.name} />
+            <img src={eventProp.images[6].url} alt={eventProp.name} />
           </Link>
         ) : (
           <img src={fourOhFour} alt="not found" />

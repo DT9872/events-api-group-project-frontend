@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   padding: 50px;
+  background: rgba(130, 154, 177, 0.5);
 }
 
 .Form form {
@@ -31,8 +32,11 @@
   .Form form {
     flex-direction: row;
     justify-content: space-between;
+    height: 20px;
+    align-items: baseline;
   }
   .Form form input {
-    padding: 2px;
+    padding: 6px;
+    margin-right: 5px;
   }
 }
