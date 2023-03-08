@@ -7,12 +7,34 @@
   color: white;
 }
 
+.Header h1 {
+  font-family: "Lobster", cursive;
+  font-size: 50px;
+}
 .Header h1,
 li {
   list-style: none;
   color: white;
 }
 
+.Header li {
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+}
+
+.Header li img {
+  width: 17px;
+  padding-left: 10px;
+}
 .Header a {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .Header li {
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+  }
 }

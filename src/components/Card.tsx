@@ -24,11 +24,17 @@ const Card = ({ eventProp }: Props) => {
           <img src={fourOhFour} alt="not found" />
         )}
         {isFav(eventProp.id) ? (
-          <button onClick={() => deleteFavoriteHandler(eventProp.id)}>
+          <button
+            className="delete"
+            onClick={() => deleteFavoriteHandler(eventProp.id)}
+          >
             Delete Favorite
           </button>
         ) : (
-          <button onClick={() => addFavoriteHandler({ event: eventProp })}>
+          <button
+            className="add"
+            onClick={() => addFavoriteHandler({ event: eventProp })}
+          >
             Add Favorite
           </button>
         )}

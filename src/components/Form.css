@@ -1,7 +1,7 @@
 .Form {
   display: flex;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 50px 50px 25px;
   background: rgba(130, 154, 177, 0.5);
 }
 
@@ -11,32 +11,59 @@
   padding: 5px;
 }
 
+.Form h2 {
+  text-align: center;
+}
+
 .Form form input {
   border-radius: 8px;
   padding: 5px;
+  width: 100%;
+  text-align: center;
+  margin: 5px;
 }
 
 .Form form label {
   margin-top: 10px;
+  border-style: none;
 }
 .Form form button {
   background-color: #486581;
   padding: 9px;
-  margin-top: 10px;
+  margin: 5px;
+  width: 104%;
   border-radius: 8px;
   border-style: none;
   color: white;
+  align-items: center;
+  box-shadow: 0px 0px 15px 0px rgb(184, 188, 224);
 }
 
+.Form button:hover {
+  background-color: #f0f4f8;
+  color: rgba(16, 42, 67, 0.5);
+}
 @media only screen and (min-width: 768px) {
+  .Form {
+    padding-bottom: 150px;
+  }
+
   .Form form {
-    flex-direction: row;
     justify-content: space-between;
     height: 20px;
-    align-items: baseline;
   }
   .Form form input {
     padding: 6px;
     margin-right: 5px;
+  }
+
+  .Form .cityContainer {
+    display: flex;
+    flex-direction: row;
+    width: 107%;
+  }
+
+  .Form button {
+    width: 104%;
   }
 }
